@@ -1,0 +1,27 @@
+{
+  "name": "array-flatten",
+  "version": "0.0.0",
+  "description": "Flatten a multi-dimensional array.",
+  "main": "array-flatten.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/array-flatten.git"
+  },
+  "keywords": [
+    "array",
+    "flatten"
+  ],
+  "author": "Blake Embrey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/array-flatten/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/array-flatten",
+  "devDependencies": {
+    "mocha": "^1.18.0",
+    "istanbul": "^0.2.6"
+  }
+}
