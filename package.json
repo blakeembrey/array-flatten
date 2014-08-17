@@ -1,6 +1,6 @@
 {
   "name": "array-flatten",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Flatten a multi-dimensional array.",
   "main": "array-flatten.js",
   "scripts": {
