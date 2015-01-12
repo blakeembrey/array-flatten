@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Flatten a multi-dimensional array.",
   "main": "array-flatten.js",
+  "files": [
+    "array-flatten.js",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec"
   },
