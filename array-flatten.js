@@ -6,7 +6,7 @@
  * @param  {Number} depth
  * @return {Array}
  */
-var flatten = function (array, result, depth) {
+function flatten (array, result, depth) {
   for (var i = 0; i < array.length; i++) {
     if (depth > 0 && Array.isArray(array[i])) {
       flatten(array[i], result, depth - 1);
@@ -16,7 +16,7 @@ var flatten = function (array, result, depth) {
   }
 
   return result;
-};
+}
 
 /**
  * Flatten an array, with the ability to define a depth.
