@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/blakeembrey/array-flatten",
   "devDependencies": {
+    "istanbul": "^0.2.6",
     "mocha": "^1.18.0",
-    "istanbul": "^0.2.6"
+    "pre-commit": "0.0.9"
   }
 }
