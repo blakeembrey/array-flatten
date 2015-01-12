@@ -4,7 +4,7 @@
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 
-Flatten an array of nested arrays into a single flat array.
+Flatten an array of nested arrays into a single flat array. Accepts an optional depth argument.
 
 ## Installation
 
