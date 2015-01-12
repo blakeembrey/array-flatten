@@ -7,11 +7,9 @@
  * @return {Array}
  */
 var flatten = function (array, result, depth) {
-  depth--;
-
   for (var i = 0; i < array.length; i++) {
-    if (depth > -1 && Array.isArray(array[i])) {
-      flatten(array[i], result, depth);
+    if (depth > 0 && Array.isArray(array[i])) {
+      flatten(array[i], result, depth - 1);
     } else {
       result.push(array[i]);
     }
