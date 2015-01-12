@@ -3,7 +3,6 @@
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
-[![Gittip][gittip-image]][gittip-url]
 
 Flatten an array of nested arrays into a single flat array.
 
@@ -35,5 +34,3 @@ MIT
 [travis-url]: https://travis-ci.org/blakeembrey/array-flatten
 [coveralls-image]: https://img.shields.io/coveralls/blakeembrey/array-flatten.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/blakeembrey/array-flatten?branch=master
-[gittip-image]: https://img.shields.io/gittip/blakeembrey.svg?style=flat
-[gittip-url]: https://www.gittip.com/blakeembrey
