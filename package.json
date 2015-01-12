@@ -16,7 +16,8 @@
   },
   "keywords": [
     "array",
-    "flatten"
+    "flatten",
+    "arguments"
   ],
   "author": {
     "name": "Blake Embrey",
