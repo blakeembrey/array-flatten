@@ -26,9 +26,5 @@ function flatten (array, result, depth) {
  * @return {Array}
  */
 module.exports = function (array, depth) {
-  if (depth < 1) {
-    return Array.prototype.slice.call(array);
-  }
-
   return flatten(array, [], depth || Infinity);
 };
