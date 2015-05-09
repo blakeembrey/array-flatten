@@ -1,0 +1,19 @@
+{
+  "name": "array-flatten",
+  "version": "1.0.2",
+  "homepage": "https://github.com/blakeembrey/array-flatten",
+  "authors": [
+    "{{{author}}}"
+  ],
+  "description": "Flatten an array of nested arrays into a single flat array",
+  "main": "array-flatten.js",
+  "keywords": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
