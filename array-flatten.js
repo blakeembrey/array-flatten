@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Recursive flatten function with depth.
  *
