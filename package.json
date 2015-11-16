@@ -1,7 +1,7 @@
 {
   "name": "array-flatten",
   "version": "1.1.1",
-  "description": "Flatten an array of nested arrays into a single flat array",
+  "description": "Flatten nested arrays",
   "main": "array-flatten.js",
   "files": [
     "array-flatten.js",
@@ -38,9 +38,9 @@
   "homepage": "https://github.com/blakeembrey/array-flatten",
   "devDependencies": {
     "benchmarked": "^0.1.4",
-    "istanbul": "^0.3.13",
+    "istanbul": "^0.4.0",
     "mocha": "^2.2.4",
     "pre-commit": "^1.0.7",
-    "standard": "^3.7.3"
+    "standard": "^5.3.1"
   }
 }

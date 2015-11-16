@@ -1,4 +1,4 @@
-var current = require('../../..')
+var current = require('../../..').from
 
 module.exports = loop
 

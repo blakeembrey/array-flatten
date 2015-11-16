@@ -1,4 +1,4 @@
-var current = require('../../..')
+var current = require('../../..').from
 var _slice = Array.prototype.slice
 
 module.exports = slice
