@@ -3,8 +3,10 @@
   "version": "2.0.0",
   "description": "Flatten nested arrays",
   "main": "array-flatten.js",
+  "typings": "array-flatten.d.ts",
   "files": [
     "array-flatten.js",
+    "array-flatten.d.ts",
     "LICENSE"
   ],
   "scripts": {
