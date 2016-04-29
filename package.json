@@ -42,7 +42,6 @@
     "benchmarked": "^0.1.4",
     "istanbul": "^0.4.0",
     "mocha": "^2.2.4",
-    "pre-commit": "^1.0.7",
     "standard": "^5.3.1"
   }
 }
