@@ -15,7 +15,9 @@ module.exports.fromDepth = flattenFromDepth
  * @return {Array}
  */
 function flatten (array) {
-  if (ArrayBuffer.isView(array)) return array;
+  if (ArrayBuffer.isView(array)) {
+    return array
+  }
   
   if (!Array.isArray(array)) {
     throw new TypeError('Expected value to be an array')
