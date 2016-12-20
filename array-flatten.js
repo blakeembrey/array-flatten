@@ -29,7 +29,7 @@ function flatten (array) {
  * @return {Array}
  */
 function flattenFrom (array) {
-  return flattenDown(array, [], Infinity)
+  return flattenDown(array, [])
 }
 
 /**
