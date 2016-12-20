@@ -10,7 +10,7 @@ var sample = [1, [2, [3, [4], 3], 2], 1]
 var flattenSuite = new Suite({
   cwd: __dirname,
   fixtures: 'fixtures/*.js',
-  add: 'code/flatten/*.js',
+  code: 'code/flatten/*.js',
   name: name,
   sample: [sample]
 })
@@ -22,7 +22,7 @@ flattenSuite.run(function (fixture) {
 var argsSuite = new Suite({
   cwd: __dirname,
   fixtures: 'fixtures/*.js',
-  add: 'code/arguments/*.js',
+  code: 'code/arguments/*.js',
   name: name,
   sample: sample
 })
@@ -32,7 +32,7 @@ argsSuite.run()
 var depthSuite = new Suite({
   cwd: __dirname,
   fixtures: 'fixtures/*.js',
-  add: 'code/depth/*.js',
+  code: 'code/depth/*.js',
   name: name,
   sample: [sample, 2]
 })
