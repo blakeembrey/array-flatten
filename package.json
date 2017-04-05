@@ -42,6 +42,6 @@
     "benchmarked": "^0.2.5",
     "istanbul": "^0.4.0",
     "mocha": "^3.1.2",
-    "standard": "^9.0.0"
+    "standard": "^10.0.0"
   }
 }
