@@ -1,11 +1,10 @@
 # Array Flatten
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/array-flatten.svg)](https://greenkeeper.io/)
-
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/array-flatten.svg)](https://greenkeeper.io/)
 
 > Flatten nested arrays.
 
