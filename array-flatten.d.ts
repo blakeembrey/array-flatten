@@ -1,16 +1,28 @@
-declare function flatten <T> (array: flatten.NestedArray<T>): T[];
+declare type InferElement<T extends ArrayLike<any>> = T extends IArguments
+  ? unknown
+  : {
+      array: T[number] extends infer Element
+        ? Element extends ArrayLike<any>
+          ? InferElement<Element>
+          : Element
+        : never
+      tuple: InferElement<Array<T[number]>>
+    }[Array<T[number]> extends T ? 'array' : 'tuple']
+
+declare function flatten<T extends ArrayLike<any>>(
+  array: T
+): flatten.FlatArray<T>
 
 declare namespace flatten {
-  export interface NestedArray <T> extends ReadonlyArray<T | NestedArray<T>> {}
+  export type FlatArray<T extends ArrayLike<any>> = Array<InferElement<T>>
 
-  export interface NestedList <T> {
-    [index: number]: T | NestedList<T>;
-    length: number;
-  }
+  export function depth<T extends ArrayLike<any>>(
+    array: T,
+    depth: number
+  ): FlatArray<T>
 
-  export function from <T> (array: NestedList<T>): T[];
-  export function depth <T> (array: NestedArray<T>, depth: number): NestedArray<T>;
-  export function depthFrom <T> (array: NestedList<T>, depth: number): NestedArray<T>;
+  export function from<T>(array: ArrayLike<T>): T[]
+  export function fromDepth<T>(array: ArrayLike<T>, depth: number): T[]
 }
 
-export = flatten;
+export = flatten
