@@ -1,4 +1,7 @@
 .DS_Store
-node_modules
-coverage
+.vscode/
+dist/
+dist.es2015/
+node_modules/
+coverage/
 npm-debug.log

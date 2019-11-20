@@ -1,3 +1,3 @@
-function noop () {}
+function noop() {}
 
-module.exports = [noop, noop, [noop, noop, noop], noop]
+module.exports = [[noop, noop, [noop, noop, noop], noop]];
