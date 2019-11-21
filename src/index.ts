@@ -1,25 +1,40 @@
 /**
- * Recursive value or array type.
+ * Pick the value from an array.
  */
-export type ValueOrArray<T> = T | Array<ValueOrArray<T>>;
+export type PickValue<T> = T extends ReadonlyArray<any>
+  ? {
+      [K in Extract<keyof T, number>]: PickValue<T[K]>;
+    }[number]
+  : T;
+
+/**
+ * Flatten an `ArrayLike` object in TypeScript.
+ */
+export type FlatArray<T extends ArrayLike<any>> = Array<PickValue<T[number]>>;
 
 /**
  * Flatten an array indefinitely.
  */
-export function flatten<T>(array: ArrayLike<ValueOrArray<T>>): T[] {
-  return $flatten(array, []);
+export function flatten<T extends ArrayLike<any>>(array: T): FlatArray<T> {
+  const result: FlatArray<T> = [];
+  $flatten<T>(array, result);
+  return result;
 }
 
-function $flatten<T>(array: ArrayLike<ValueOrArray<T>>, result: T[]): T[] {
+/**
+ * Internal flatten function recursively passes `result`.
+ */
+function $flatten<T extends ArrayLike<any>>(
+  array: T,
+  result: FlatArray<T>
+): void {
   for (let i = 0; i < array.length; i++) {
     const value = array[i];
 
     if (Array.isArray(value)) {
-      $flatten(value, result);
+      $flatten(value as any, result);
     } else {
       result.push(value);
     }
   }
-
-  return result;
 }
