@@ -6,7 +6,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Bundle size][bundlephobia-image]][bundlephobia-url]
 
-> Flatten nested arrays.
+> `array-flatten` is considered legacy. new code should use [array.flat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) or [array.flatMap()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap) instead.
 
 ## Installation
 
