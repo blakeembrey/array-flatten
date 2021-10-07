@@ -8,6 +8,8 @@
 
 > Flatten nested arrays.
 
+🚨 **Notice:** Code using node.js >= 11 should use the native [Array.flat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) method instead. 🚨
+
 ## Installation
 
 ```
